@@ -30,6 +30,7 @@ export default class ClassList extends Component {
 
     return (
       <div className="box">
+        <button onClick={() => this.props.history.goBack()}>Back</button>
         <h1>{this.props.match.params.class}</h1>
         <h2>ClassList:</h2>
         {students}
